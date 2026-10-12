@@ -1,23 +1,26 @@
-# 🏠 Snap Plan Pro — House Layout Designer
+# 🏠 Snap Plan — Auto Home Design
 
-**Snap Plan Pro** is a desktop application for designing house layouts. Users log in, define their requirements (bedrooms, bathrooms, kitchens, garden), arrange rooms, furniture and structural elements on a 2D blueprint, then switch to an interactive **3D view** of the same plan. The finished design can be saved as a blueprint and exported as a **House Design Report**.
+**Snap Plan** is a JavaFX application for **2D/3D home design**. It features **drag-and-drop blueprint creation**, **interactive 3D visualization** and **professional report generation**. Users can switch seamlessly between 2D planning and realistic 3D walkthroughs of the same design.
+
+Users log in, define their requirements (bedrooms, bathrooms, kitchens, garden), arrange rooms, furniture and structural elements on a 2D blueprint, then switch to the 3D view. The finished design can be saved as a blueprint and exported as a **House Design Report**.
 
 📎 **LinkedIn post:** https://www.linkedin.com/feed/update/urn:li:activity:7389669432152940544/
 
 ---
 
+
 ## ✨ Features
 
 - **Login / Sign Up screen** — entry point of the application; the logged-in user and role (e.g. *admin – Designer*) are carried into the final report.
 - **Home Planner input form** — specify the number of bedrooms, bathrooms and kitchens, and whether to include a garden.
-- **2D Blueprint Designer** — colour-coded, labelled elements on a canvas titled *House Blueprint*.
-- **3D View** — one-click toggle (*Show 3D View* / *Show 2D View*) that renders the same plan as a 3D scene with floor, objects, roof, lighting and sky background.
+- **Drag-and-drop 2D Blueprint Designer** — colour-coded, labelled elements on a canvas titled *House Blueprint*.
+- **Interactive 3D visualization** — one-click toggle (*Show 3D View* / *Show 2D View*) that renders the same plan as a 3D scene with floor, objects, roof, lighting and sky background, for a realistic 3D walkthrough.
 - **Element palette (side panel)**
   - **Rooms:** Bedroom, Bathroom, Kitchen, Garden
   - **Furniture:** Bed, Sofa, Table, Chair, Cabinet, Desk
   - **Structure:** Surface (floor), Roof, Walls
 - **Save Blueprint** — store the current design.
-- **Generate Report** — opens a *House Design Report* window with floor-plan specifications (bedrooms, bathrooms, kitchens, garden, user) and the blueprint image.
+- **Professional report generation** (*Generate Report*) — opens a *House Design Report* window with floor-plan specifications (bedrooms, bathrooms, kitchens, garden, user) and the blueprint image.
 - **Clear All** — reset the canvas and start over.
 
 ---
@@ -103,7 +106,7 @@ java --module-path sdk/lib --add-modules javafx.controls,javafx.fxml -cp out aut
 
 1. Launch the app and **log in** (or sign up).
 2. Enter the number of **bedrooms, bathrooms, kitchens** and choose whether to include a **garden**.
-3. In the designer, add **rooms, furniture and structure** from the right-hand panel.
+3. In the designer, add **rooms, furniture and structure** from the right-hand panel and drag them into place.
 4. Click **Show 3D View** to see the plan in 3D, and **Show 2D View** to return.
 5. Use **Save Blueprint** to save, **Generate Report** to create the design report, or **Clear All** to start fresh.
 
