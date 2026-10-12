@@ -6,7 +6,6 @@
 
 ---
 
-
 ## ✨ Features
 
 - **Login / Sign Up screen** — entry point of the application; the logged-in user and role (e.g. *admin – Designer*) are carried into the final report.
@@ -29,9 +28,9 @@
 |---|---|
 | Language | **Java** (JDK 24) |
 | UI Framework | **JavaFX 24.0.1** (`javafx.controls`, `javafx.fxml`, `javafx.graphics`) |
-| 2D Blueprint | JavaFX 2D scene graph — `Pane`, `Rectangle`, `Label`, colour-coded shapes |
+| 2D Blueprint | JavaFX 2D scene graph — colour-coded, labelled shapes |
 | **3D Rendering** | **JavaFX 3D API** — `SubScene`, `PerspectiveCamera`, `Box` primitives, `PhongMaterial`, lighting, 3D transforms (rotate / translate) |
-| Layout | `VBox`, `HBox`, `BorderPane`, `ScrollPane`, `Insets` |
+| Layout & Controls | `VBox`, `Insets`, `Label`, `TextField`, `PasswordField`, `CheckBox`, `Button` |
 | Dialogs | JavaFX `Alert` / secondary `Stage` windows |
 | Architecture | Modular Java project (`module-info.java`) — module `autohome`, package `autohome` |
 | IDE | **IntelliJ IDEA** |
