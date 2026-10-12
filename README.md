@@ -7,7 +7,6 @@
 ---
 
 
-
 ## ✨ Features
 
 - **Login / Sign Up screen** — entry point of the application; the logged-in user and role (e.g. *admin – Designer*) are carried into the final report.
@@ -31,23 +30,21 @@
 | Language | **Java** (JDK 24) |
 | UI Framework | **JavaFX 24.0.1** (`javafx.controls`, `javafx.fxml`, `javafx.graphics`) |
 | 2D Blueprint | JavaFX 2D scene graph — `Pane`, `Rectangle`, `Label`, colour-coded shapes |
-| **3D Rendering** | **JavaFX 3D API** — `SubScene`, `PerspectiveCamera`, `Box` primitives, `PhongMaterial`, lights (`AmbientLight` / `PointLight`), 3D transforms (rotate / translate) |
+| **3D Rendering** | **JavaFX 3D API** — `SubScene`, `PerspectiveCamera`, `Box` primitives, `PhongMaterial`, lighting, 3D transforms (rotate / translate) |
 | Layout | `VBox`, `HBox`, `BorderPane`, `ScrollPane`, `Insets` |
 | Dialogs | JavaFX `Alert` / secondary `Stage` windows |
 | Architecture | Modular Java project (`module-info.java`) — module `autohome`, package `autohome` |
 | IDE | **IntelliJ IDEA** |
 | Other JavaFX modules available | `javafx.web`, `javafx.media`, `javafx.swing` (bundled with the SDK) |
 
-### 🧊 How the 3D view works
+### 🧊 3D View
 
-The 3D view is built entirely with the **built-in JavaFX 3D API** — no external 3D engine (like Three.js or Unity) is used.
+The 3D view is built with the **built-in JavaFX 3D API** — no external 3D engine (such as Three.js or Unity) is used.
 
-1. Each 2D element (room, furniture, floor, roof, walls) is mapped to a 3D **`Box`** with matching width/depth and a suitable height.
-2. Colours and shading come from **`PhongMaterial`** (diffuse colour + specular highlights).
-3. A **`PerspectiveCamera`** inside a **`SubScene`** provides depth and perspective; the sky-blue background is the scene fill.
-4. **Lights** give the floor and objects their shaded look and highlight.
-5. The *Roof* element is rendered as rotated boxes sitting on top of the structure.
-6. The toggle button swaps between the 2D pane and the 3D SubScene without losing the design.
+- Rooms, furniture, floor, walls and roof are rendered as 3D **`Box`** shapes.
+- Colours and shading use **`PhongMaterial`**, with lighting for the shaded look and highlights.
+- A **`PerspectiveCamera`** in a **`SubScene`** provides depth and perspective, over a sky-blue background.
+- The *Show 3D View* / *Show 2D View* button switches between the two views of the same plan.
 
 ---
 
@@ -126,7 +123,7 @@ java --module-path sdk/lib --add-modules javafx.controls,javafx.fxml -cp out aut
 
 ## 👩‍💻 Author
 
-**Syeda** — Front-end & Java developer
+**Syeda**
 🔗 LinkedIn post: https://www.linkedin.com/feed/update/urn:li:activity:7389669432152940544/
 
 ---
